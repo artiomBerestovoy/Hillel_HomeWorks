@@ -1,4 +1,4 @@
-/*    
+/*
  *    This is simple Java program.
  *	  Call this file "ArrayExample.java"
  *	  Version 25.11.2019
