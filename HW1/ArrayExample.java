@@ -1,5 +1,5 @@
 /*
- *	This is simple Java program.
+ *		This is simple Java program.
  *	Call this file "ArrayExample.java"
  *	Version 25.11.2019
  *	Author Berestovoy Artiom
