@@ -1,8 +1,8 @@
 /*
- *    This is simple Java program.
- *	  Call this file "ArrayExample.java"
- *	  Version 25.11.2019
- *	  Author Berestovoy Artiom
+ *	This is simple Java program.
+ *	Call this file "ArrayExample.java"
+ *	Version 25.11.2019
+ *	Author Berestovoy Artiom
  */ 
  public class ArrayExample{
 	 public static void main(String[] args){
