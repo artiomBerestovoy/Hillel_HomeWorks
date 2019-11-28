@@ -12,21 +12,17 @@ public class FibonacciNumbers {
 		int[] febArray = new int[20];
 		
 		/* Filling the array */
-		for(int i = 0, j = 1; i < febArray.length; i++){
+		for(int i = 0; i < febArray.length; i++){
 			
 			switch(i){
 				case 0:
-					febArray[i] = j;
+					febArray[i] = 1;
 					break;
 					
 				case 1:
-					febArray[i] = j; 
+					febArray[i] = 1; 
 					break;
-					
-				case 2:
-					febArray[i] = ++j; 
-					break;
-					
+				
 				default: 
 					febArray[i] = febArray[i-1] + febArray[i-2];
 			}
