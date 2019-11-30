@@ -1,7 +1,6 @@
 public class LargestAndSmallest {
 
 	public static void main(String[] args) {
-
 		/* Define and initialize the array */
 		int[] numbArray = { 5, 48, 3, 33, 7, 67, 98, 17, 46, };
 		int smallest = numbArray[0];
@@ -17,7 +16,6 @@ public class LargestAndSmallest {
 			}
 
 		}
-
 		System.out.println("Largest Number is : " + biggest);
 		System.out.println("Smallest Number is : " + smallest);
 
