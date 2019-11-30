@@ -1,9 +1,4 @@
-/*
- *	  This is simple Java program.
- *	  Call this file "FibonacciNumbers.java"
- *	  Version 28.11.2019
- *	  Author Berestovoy Artiom
- */
+
 public class FibonacciNumbers {
 
 	public static void main(String[] args) {
@@ -12,22 +7,22 @@ public class FibonacciNumbers {
 		int[] febArray = new int[20];
 		
 		/* Filling the array */
-		for(int i = 0; i < febArray.length; i++){
+		for (int i = 0; i < febArray.length; i++) {
 			
-			switch(i){
-				case 0:
-					febArray[i] = 1;
-					break;
+			switch (i) {
+			case 0:
+				febArray[i] = 1;
+				break;
 					
-				case 1:
-					febArray[i] = 1; 
-					break;
+			case 1:
+				febArray[i] = 1; 
+				break;
 				
-				default: 
-					febArray[i] = febArray[i-1] + febArray[i-2];
+			default:
+				febArray[i] = febArray[i - 1] + febArray[i - 2];
 			}
 		}
-		for(int f:febArray){
+		for (int f : febArray) {
 			System.out.print(f + " ");
 		}
 	}
