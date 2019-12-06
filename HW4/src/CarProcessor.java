@@ -8,8 +8,8 @@ class CarProcessor {
             if (c.carMake.equals(make)) {
     			
                 System.out.println(c.carId + c.carMake + c.carModel
-                                   + c.yearOfIssue + c.carColor + c.carCost
-                                   + c.registrationNumber);
+                        + c.yearOfIssue + c.carColor + c.carCost
+                        + c.registrationNumber);
             }
         }
     }
@@ -22,8 +22,8 @@ class CarProcessor {
                     & ((2019 - c.yearOfIssue) < age)) {
         		
                 System.out.println(c.carId + c.carMake + c.carModel
-                           + c.yearOfIssue + c.carColor + c.carCost
-                           + c.registrationNumber);
+                        + c.yearOfIssue + c.carColor + c.carCost
+                        + c.registrationNumber);
             }
         }
     }
@@ -39,7 +39,7 @@ class CarProcessor {
         }
         
         System.out.println(pricy.carId + pricy.carMake + pricy.carModel
-                   + pricy.yearOfIssue + pricy.carColor + pricy.carCost
-                   + pricy.registrationNumber);
+                + pricy.yearOfIssue + pricy.carColor + pricy.carCost
+                + pricy.registrationNumber);
     }
 }
