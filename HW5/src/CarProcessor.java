@@ -27,15 +27,8 @@ class CarProcessor {
         if (carArray == null) {
             System.out.println("The array is empty.");
             return;
-        } else {
-        	
-            for (Car c : carArray) {
-
-                if (c.carMake.equals(make)) {
-                    printCar(c);
-                }
-            }
-        }
+        } 
+        sortBrand(carArray, make);
     }
 
     void oldestCar(Car[] cars, String make, int age) {
@@ -52,15 +45,8 @@ class CarProcessor {
         if (carArray == null) {
             System.out.println("The array is empty.");
             return;
-        } else {
-            
-        	for (Car c : carArray) {
-
-                if ((c.carMake.equals(make)) & ((2019 - c.yearOfIssue) < age)) {
-                    printCar(c);
-                }
-            }
-        }
+        } 
+        oldestCar(carArray, make, age);
     }
 
     void mostExpensive(Car[] cars, int age, int cost) {
@@ -77,14 +63,8 @@ class CarProcessor {
     	if (carArray == null) {
             System.out.println("The array is empty.");
             return;
-        } else {
-            for (Car c : carArray) {
-
-                if ((c.carCost > cost) & (c.yearOfIssue == age)) {
-                    printCar(c);
-                }
-            } 
-        }
+        } 
+    	mostExpensive(carArray, age, cost);
     }
     
     void printCar(Car car) {
