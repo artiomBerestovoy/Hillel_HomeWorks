@@ -2,7 +2,7 @@ package com.hillel.berestovoy.park;
 
 import com.hillel.berestovoy.vehicles.*;
 
-public class MyAvtopark implements Avtopark {
+public class AvtoparkImpl implements Avtopark {
     
     private Vehicle[] allVehicle;
     
@@ -14,7 +14,7 @@ public class MyAvtopark implements Avtopark {
         this.allVehicle = allVehicle;
     }
 
-    public MyAvtopark(Vehicle[] allVehicle) {
+    public AvtoparkImpl(Vehicle[] allVehicle) {
         this.allVehicle = allVehicle;
     }
     

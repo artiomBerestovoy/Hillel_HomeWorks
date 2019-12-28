@@ -18,7 +18,7 @@ public class Runner {
             new SportCar(88_880, 17, 320, 578, "Audi S8 Plus"), };
 
     public void run() {
-        park = new MyAvtopark(allVehicle);
+        park = new AvtoparkImpl(allVehicle);
         
         System.out.print("All vehicles: ");
         System.out.println(Arrays.toString(allVehicle));
