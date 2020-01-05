@@ -20,6 +20,9 @@ public class Demo {
         
         System.out.println("=== Part6");
         Part6.main(new String[] {"10"});
+        
+        System.out.println("=== Part7");
+        Part7.main(null);
 
     }
 

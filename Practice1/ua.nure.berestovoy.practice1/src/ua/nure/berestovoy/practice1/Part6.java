@@ -26,7 +26,20 @@ public class Part6 {
                 numbArray[j++] = i;
             }
         }
-        System.out.println(Arrays.toString(numbArray));
+        print(numbArray);
+    }
+    
+    public static void print(int [] list) {
+    	
+        for (int i = 0; i < list.length; i++) {
+            System.out.print(list[i]);
+            
+            if (i < (list.length - 1)) {
+                System.out.print(" ");
+            }
+            
+        }
+        System.out.println();
     }
 
 }
