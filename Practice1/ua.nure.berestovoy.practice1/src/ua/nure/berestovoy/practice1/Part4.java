@@ -1,8 +1,8 @@
 package ua.nure.berestovoy.practice1;
 
 public class Part4 {
-    public static int max;
-    public static int min;
+    private static int max;
+    private static int min;
     
     public static void main(String[] args) {
         
@@ -21,15 +21,13 @@ public class Part4 {
     }
     
     public static void biggestGeneralDivider(int big, int little) {
-        boolean isComplete = true;
         int divider;
         
-        while (isComplete) {
+        while (true) {
             divider = big - little;
             
             if (((max %  divider) == 0) && ((min %  divider) == 0)) {
-                isComplete = false;
-                
+                                
                 System.out.println(divider);
                 break;
             }
