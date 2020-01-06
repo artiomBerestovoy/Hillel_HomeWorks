@@ -23,15 +23,15 @@ public class Part7 {
     }
     
     public static String int2str(int number) {
-        String result = "";
+        StringBuilder result = new StringBuilder("");
                 
         while (number != 0) {
             
             if ((number % ABC_SIZE) != 0) {
-                result = String.valueOf((char) ((number % ABC_SIZE) + OFFSET_TO_A)) + result;
+                result.insert(0, (char) ((number % ABC_SIZE) + OFFSET_TO_A));
                 number -= (number % ABC_SIZE);
             } else {
-                result = 'Z' + result;
+                result.insert(0, 'Z');
                 number -= ABC_SIZE;
             }
             
@@ -40,7 +40,7 @@ public class Part7 {
             }
             
         }
-        return result;
+        return result.toString();
     }
     
     public static String rightColumn(String number) {
