@@ -38,29 +38,25 @@ public class Avtopark {
     
     public Vehicle[] serchFastest(int minSpeed, int maxSpeed) {
         Vehicle[] fastest = new Vehicle[0];
-        Vehicle[] bufArray;
-        
+
         for (int i = 0; i < allVehicle.length; i++) {
             if ((allVehicle[i].speed >= minSpeed) && (allVehicle[i].speed <= maxSpeed)) {
-               
-                if (fastest.length == 0) {
-                    fastest = new Vehicle[1];
-                    fastest[0] = allVehicle[i];
-                } else {
-                    bufArray = new Vehicle[fastest.length + 1];
-                    
-                    for (int j = 0; j < bufArray.length; j++) {
-                
-                        if (j == bufArray.length - 1) {
-                            bufArray[j] = allVehicle[i];
-                            fastest = bufArray;
-                            break;
-                        }
-                        bufArray[j] = fastest[j];
-                    }
-                }
+                fastest = externdArray(fastest, allVehicle[i]);
             }
         }
         return fastest;
+    }
+
+    private Vehicle[] externdArray(Vehicle[] vehicles, Vehicle newVeh){
+       if (vehicles.length == 0) {
+           return vehicles = new Vehicle[]{newVeh};
+       }
+
+       Vehicle[] bufArray = new Vehicle[vehicles.length + 1];
+       for (int i = 0; i < vehicles.length; i++){
+           bufArray[i] = vehicles[i];
+       }
+       bufArray[vehicles.length] = newVeh;
+       return bufArray;
     }
 }
