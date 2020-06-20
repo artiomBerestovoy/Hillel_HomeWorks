@@ -1,11 +1,13 @@
-package com.berestovoy.entity;
+package com.berestovoy.Util;
+
+import com.berestovoy.entity.PrimeNumbers;
 
 public class Filter implements Runnable {
     private String name;
     private int min;
     private int max;
     private PrimeNumbers primeNumbers;
-    Thread t;
+    private Thread t;
 
     public Filter(String name, int min, int max, PrimeNumbers primeNumbers) {
         this.name = name;
@@ -14,6 +16,14 @@ public class Filter implements Runnable {
         this.primeNumbers = primeNumbers;
         t = new Thread(this, name);
         t.start();
+    }
+
+    public Thread getT() {
+        return t;
+    }
+
+    public void setT(Thread t) {
+        this.t = t;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.berestovoy.entity;
 
+import com.berestovoy.Util.Filter;
+
 public class PrimeNumbers {
     private Filter[] filters;
     private PrimesArray primesArray = new PrimesArray();
@@ -37,7 +39,7 @@ public class PrimeNumbers {
         }
         for (int k = 0; k < filters.length; k++) {
             try {
-                filters[k].t.join();
+                filters[k].getT().join();
             }catch (InterruptedException e) {
                 System.out.println("Tread is interrupted");
             }

@@ -1,4 +1,4 @@
-package com.berestovoy.entity;
+package com.berestovoy.console;
 
 import com.berestovoy.entity.PrimeNumbers;
 
