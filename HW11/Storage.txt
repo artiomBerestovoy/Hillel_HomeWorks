@@ -1,0 +1,9 @@
+Van,15000,5,220,1500,VW caddy;
+Van,28000,7,220,2500,Mercedes Vito;
+Van,32000,9,240,2500,VW T5;
+Bus,38400,9,220,17,VW Crafter;
+Bus,46700,10,210,15,Ford Transit;
+Bus,22900,11,200,20,Mercedes Sprinter;
+SportCar,45800,12,280,405,Lexus LS 460;
+SportCar,78900,15,295,500,Mercedes S500 AMG;
+SportCar,88880,17,320,578,Audi S8 Plus;
