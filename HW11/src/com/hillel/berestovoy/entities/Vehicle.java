@@ -1,4 +1,4 @@
-package com.hillel.berestovoy.vehicles;
+package com.hillel.berestovoy.entities;
 
 public interface Vehicle {
 

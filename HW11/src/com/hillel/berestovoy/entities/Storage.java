@@ -1,4 +1,4 @@
-package com.hillel.berestovoy.vehicles;
+package com.hillel.berestovoy.entities;
 
 import java.io.File;
 import java.io.FileInputStream;

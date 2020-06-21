@@ -1,22 +1,22 @@
-package com.hillel.berestovoy.vehicles;
+package com.hillel.berestovoy.entities;
 
-public class Van implements Vehicle {
+public class SportCar implements Vehicle {
     private int cost;
     private int fuelConsumption;
     private int speed;
     private String mark;
-    private int trunkVolume;
+    private int power;
 
-    public Van(int cost, int fuelConsumption, int speed, int trunkVolume, String mark) {
+    public SportCar(int cost, int fuelConsumption, int speed, int power, String mark) {
         this.cost = cost;
         this.fuelConsumption = fuelConsumption;
         this.speed = speed;
-        this.trunkVolume = trunkVolume;
+        this.power = power;
         this.mark = mark;
     }
 
     public int getCost() {
-    return cost;
+        return cost;
     }
 
     public void setCost(int cost) {
@@ -47,19 +47,19 @@ public class Van implements Vehicle {
         this.mark = mark;
     }
 
-    public int getTrunkVolume() {
-        return trunkVolume;
+    public int getPower() {
+        return power;
     }
 
-    public void setTrunkVolume(int trunkVolume) {
-        this.trunkVolume = trunkVolume;
+    public void setPower(int power) {
+        this.power = power;
     }
 
     @Override
     public String toString() {
-        return "\nVan [cost = " + cost + ", fuelConsumption = " + fuelConsumption
-                + ", speed = " + speed + ", trunkVolume = " + trunkVolume
-                + ", mark = " + mark + "]";
+        return "\nSportCar [cost = " + cost + ", fuelConsumption = " + fuelConsumption
+                + ", speed = " + speed + ", mark = " + mark
+                + ", power = " + power + "]";
     }
 
     public boolean equals(Object obj) {
@@ -69,11 +69,10 @@ public class Van implements Vehicle {
         if (obj == null) {
             return false;
         }
-        Van other = (Van) obj;
-        if ((mark != other.mark) && (trunkVolume != other.trunkVolume)) {
+        SportCar other = (SportCar) obj;
+        if ((power != other.power) && (speed != other.speed)) {
             return false;
         }
-    return true;
+        return true;
     }
-
 }

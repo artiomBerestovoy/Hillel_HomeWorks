@@ -1,6 +1,6 @@
 package com.hillel.berestovoy.park;
 
-import com.hillel.berestovoy.vehicles.*;
+import com.hillel.berestovoy.entities.*;
 import com.hillel.berestovoy.utils.ArrayUtils;
 
 public class AvtoparkImpl implements Avtopark {

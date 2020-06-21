@@ -1,6 +1,6 @@
 package com.hillel.berestovoy.park;
 
-import com.hillel.berestovoy.vehicles.*;
+import com.hillel.berestovoy.entities.*;
 
 public interface Avtopark {
 

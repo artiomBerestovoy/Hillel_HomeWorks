@@ -1,18 +1,19 @@
-package com.hillel.berestovoy.vehicles;
+package com.hillel.berestovoy.entities;
 
-public class SportCar implements Vehicle {
+public class Bus implements Vehicle {
     private int cost;
     private int fuelConsumption;
     private int speed;
     private String mark;
-    private int power;
+    private int quantityOfSeats;
 
-    public SportCar(int cost, int fuelConsumption, int speed, int power, String mark) {
+    public Bus(int cost, int fuelConsumption, int speed, int quantityOfSeats, String mark) {
         this.cost = cost;
         this.fuelConsumption = fuelConsumption;
         this.speed = speed;
-        this.power = power;
+        this.quantityOfSeats = quantityOfSeats;
         this.mark = mark;
+
     }
 
     public int getCost() {
@@ -47,19 +48,19 @@ public class SportCar implements Vehicle {
         this.mark = mark;
     }
 
-    public int getPower() {
-        return power;
+    public int getQuantityOfSeats() {
+        return quantityOfSeats;
     }
 
-    public void setPower(int power) {
-        this.power = power;
+    public void setQuantityOfSeats(int quantityOfSeats) {
+        this.quantityOfSeats = quantityOfSeats;
     }
 
     @Override
     public String toString() {
-        return "\nSportCar [cost = " + cost + ", fuelConsumption = " + fuelConsumption
+        return "\nBus [cost = " + cost + ", fuelConsumption = " + fuelConsumption 
                 + ", speed = " + speed + ", mark = " + mark
-                + ", power = " + power + "]";
+                + ", quantityOfSeats = " + quantityOfSeats + "]";
     }
 
     public boolean equals(Object obj) {
@@ -69,10 +70,11 @@ public class SportCar implements Vehicle {
         if (obj == null) {
             return false;
         }
-        SportCar other = (SportCar) obj;
-        if ((power != other.power) && (speed != other.speed)) {
+        Bus other = (Bus) obj;
+        if ((mark != other.mark) && (quantityOfSeats != other.quantityOfSeats)) {
             return false;
         }
         return true;
     }
+
 }

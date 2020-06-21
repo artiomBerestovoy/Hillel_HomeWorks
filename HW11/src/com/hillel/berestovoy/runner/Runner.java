@@ -1,7 +1,7 @@
 package com.hillel.berestovoy.runner;
 
 import java.util.Arrays;
-import com.hillel.berestovoy.vehicles.*;
+import com.hillel.berestovoy.entities.*;
 import com.hillel.berestovoy.park.*;
 
 public class Runner {
@@ -15,7 +15,7 @@ public class Runner {
         Avtopark park = new AvtoparkImpl(allVehicle);
 
 
-        System.out.print("All vehicles: ");
+        System.out.print("All entities: ");
         System.out.println(Arrays.toString(allVehicle));
         System.out.println();
 

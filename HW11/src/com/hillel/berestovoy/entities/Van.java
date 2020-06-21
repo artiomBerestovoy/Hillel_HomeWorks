@@ -1,23 +1,22 @@
-package com.hillel.berestovoy.vehicles;
+package com.hillel.berestovoy.entities;
 
-public class Bus implements Vehicle {
+public class Van implements Vehicle {
     private int cost;
     private int fuelConsumption;
     private int speed;
     private String mark;
-    private int quantityOfSeats;
+    private int trunkVolume;
 
-    public Bus(int cost, int fuelConsumption, int speed, int quantityOfSeats, String mark) {
+    public Van(int cost, int fuelConsumption, int speed, int trunkVolume, String mark) {
         this.cost = cost;
         this.fuelConsumption = fuelConsumption;
         this.speed = speed;
-        this.quantityOfSeats = quantityOfSeats;
+        this.trunkVolume = trunkVolume;
         this.mark = mark;
-
     }
 
     public int getCost() {
-        return cost;
+    return cost;
     }
 
     public void setCost(int cost) {
@@ -48,19 +47,19 @@ public class Bus implements Vehicle {
         this.mark = mark;
     }
 
-    public int getQuantityOfSeats() {
-        return quantityOfSeats;
+    public int getTrunkVolume() {
+        return trunkVolume;
     }
 
-    public void setQuantityOfSeats(int quantityOfSeats) {
-        this.quantityOfSeats = quantityOfSeats;
+    public void setTrunkVolume(int trunkVolume) {
+        this.trunkVolume = trunkVolume;
     }
 
     @Override
     public String toString() {
-        return "\nBus [cost = " + cost + ", fuelConsumption = " + fuelConsumption 
-                + ", speed = " + speed + ", mark = " + mark
-                + ", quantityOfSeats = " + quantityOfSeats + "]";
+        return "\nVan [cost = " + cost + ", fuelConsumption = " + fuelConsumption
+                + ", speed = " + speed + ", trunkVolume = " + trunkVolume
+                + ", mark = " + mark + "]";
     }
 
     public boolean equals(Object obj) {
@@ -70,11 +69,11 @@ public class Bus implements Vehicle {
         if (obj == null) {
             return false;
         }
-        Bus other = (Bus) obj;
-        if ((mark != other.mark) && (quantityOfSeats != other.quantityOfSeats)) {
+        Van other = (Van) obj;
+        if ((mark != other.mark) && (trunkVolume != other.trunkVolume)) {
             return false;
         }
-        return true;
+    return true;
     }
 
 }

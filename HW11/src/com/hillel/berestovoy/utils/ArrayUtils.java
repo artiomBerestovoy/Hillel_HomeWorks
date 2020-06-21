@@ -1,6 +1,6 @@
 package com.hillel.berestovoy.utils;
 
-import com.hillel.berestovoy.vehicles.Vehicle;
+import com.hillel.berestovoy.entities.Vehicle;
 
 public class ArrayUtils {
 
